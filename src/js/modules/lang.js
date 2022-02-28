@@ -1,0 +1,18 @@
+export const lang = [{
+    'ACASA': 'DOMOI',
+    'Mai multe fructe, mai puțin zahăr': 'Больше фруктов,меньше сахара!',
+    'Doar din fructe și nimic în plus': 'Только фрукты и ничего больше',
+    'descoperă toate gusturile': 'Открой для себя все вкусы',
+    'Stârnește-ți pofta de creativitate cu gemurile Vita. Și pentru că în fiecare borcan găsești mai multe fructe și mai puțin zahăr, fii sigur că rezultatul va fi unul pe măsură de gustos!': 'Заниматься кулинарным творчеством с джемами и вареньями VITA — одно удовольствие. Больше фруктов, меньше сахара и будьте уверены, что результат будет максимально вкусным!',
+    'DULCEAȚĂ': 'Варенье и джемы Vita',
+    'Este ușor să faci alegeri mai bune pentru sănătatea ta. De aceia, punem în dulceața noastră mai multe fructe și mai putin zahăr pentru ca tu să te poți bucura de cea mai sănătoasă și gustoasă experiență cu VITA': 'Объединяют лучшие традиции, высокое качество продукции, использование натуральных ингредиентов, опыт профессионалов, инновационные идеи и уникальные технологии, строгое соблюдение международных стандартов качества и безопасности. Постоянное изучение рынка и запросов потребителей – секрет безупречного вкуса!',
+    'Fericirea nu are anotimp! Ea vine dozată  în borcane VITA, cu mai multe fructe și mai puțin zahăr, pentru ca tu să te bucuri de gustul ei autentic, tot anul!': 'Счастье приходит  в любое время года – в баночках  Vita, где больше фруктов и меньше сахара. Поэтому вы можете наслаждаться им круглый год!',
+    'GEM': 'ДЖЕМ',
+    'DE PIERSICI': 'АБРИКОСОВЫЙ',
+    'DE GUTUI': '',
+    'DE FRUCTE ȘI POMUȘOARE': '',
+    'DE MERE': '',
+    'DE CĂPȘUNE': '',
+    'DE COACĂZĂ NEAGRĂ': '',
+    '': '',
+}]

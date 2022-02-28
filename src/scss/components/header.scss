@@ -1,0 +1,161 @@
+.upper-header {
+    background-color: #98C300;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px 0;
+    @media (max-width: $tablet) {
+        display: none;
+    }
+    .upper-header__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    @media (max-width: $tablet) {
+        top: 20px;
+    }
+    .header__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        @include adaptiv-value('gap', 45, 20, 1);
+        .logo{
+            img{
+                @include adaptiv-value('width', 224, 150, 1);
+            }
+        }
+        .header-nav {
+            position: relative;
+            display: flex;
+            align-items: center;
+            @include adaptiv-value('gap', 65, 30, 1);
+            @media (max-width: $tablet) {
+                display: none;
+                display: block;
+                position: fixed;
+                top: 0;
+                right: -50%;
+                bottom: 0;
+                background-color: #fff;
+                width: 50%;
+                height: 100%;
+                z-index: 5;
+                padding: 100px 0 0 30px;
+                transition: .3s;
+            }
+            &.active {
+                @media(max-width: $tablet) {
+                    right: 0;
+                }
+            }
+            &__list {
+                display: flex;
+                align-items: center;
+                @include adaptiv-value('gap', 65, 30, 1);
+                @media(max-width: $tablet) {
+                    display: block;
+                }
+                li {
+                    width: fit-content;
+                    @media (max-width: $tablet) {
+                        margin-bottom: 20px;
+                        color: #A6232B;
+                        filter: none;
+                    }
+                    filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.6));
+                    a {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 30px;
+                        @media (max-width: $tablet) {
+                            color: #A6232B;
+                        }
+                    }
+                    &.active {
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            background-color: $maincolor;
+                            transition: .3s ease-in;
+                        }
+                        @media (max-width: $tablet) {
+                            &::after {
+                                background-color: #A6232B;
+                            }
+                        }
+                    }
+                }
+            }
+            .language {
+                position: relative;
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+                .language-header {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    @media(max-width: $tablet) {
+                        display: none
+                    }
+                    span {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 30px;
+                        @media(max-width: $tablet) {
+                            color: #A6232B;
+                        }
+                    }
+                    svg {
+                        transition: .3s;
+                    }
+                }
+                .language-list {
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    @media(max-width: $tablet) {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    li {
+                        cursor: pointer;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 23px;
+                        @media(max-width: $tablet) {
+                            color: #A6232B;
+                            font-size: 20px;
+                        }
+                    }
+                    @media(max-width: $tablet) {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                &.open {
+                    .language-header {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    .language-list {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+            
+        }
+    }
+}
