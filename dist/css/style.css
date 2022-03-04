@@ -442,6 +442,7 @@ h3 {
 .jam .page__jam-slider .jam-slider__body .jam-slider__slider .slider-jam__body .slider-jam__slide img {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .jam .page__jam-slider .jam-slider__body .jam-slider__slider .slider-jam-controls {
