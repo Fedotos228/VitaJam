@@ -1,7 +1,11 @@
 .intro {
+    @include adaptiv-value('height', 800, 720, 1);
     height: 800px;
     @media (max-width: $tablet) {
         background-position: 60% 0 !important;
+    }
+    @media (max-width: $mobileMedium){
+        background-position: 20% 0 !important;
     }
     &__container {
         transform: translateY(140px);
@@ -133,12 +137,11 @@
             .dainties-slider__slider {
                 position: relative;
                 .slider-dainties__body {
-                    max-width: 1110px;
+                    max-width: 1123px;
                     .slider-dainties__slide {
                         height: 280px;
                         max-width: 255px;
                         img {
-                            height: 100%;
                             width: 100%;
                             display: block;
                             margin: 0 auto;
